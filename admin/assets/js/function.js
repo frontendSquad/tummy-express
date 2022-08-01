@@ -40,6 +40,22 @@ if (eyeBtn) {
 
 
 
+$('.view_rmenu_ltslider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    fade: true,
+    asNavFor: '.view_rmenu_lbslider'
+});
+$('.view_rmenu_lbslider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.view_rmenu_ltslider',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true
+});  
 
 
 
